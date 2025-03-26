@@ -25,12 +25,12 @@ This repository contains the official code for our paper, _**"Black-Box Adversar
 
 We fine-tune pre-trained transformers like `facebook/bart-base` on dialogue datasets such as Blended Skill Talk (BST), ConvAI2, EmpatheticDialogues (ED), and Wizard of Wikipedia (WoW).
 
-    ```
+    
     python train_seq2seq.py \
         --model_name_or_path facebook/bart-base \
         --dataset blended_skill_talk \
         --output_dir results/bart-base
-    ```
+    
 ## Attack Models
 You can reproduce the results in our paper by runing the following scripts, hyperparameters can be adjusted based on the papers:
 
