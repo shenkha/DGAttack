@@ -928,7 +928,7 @@ if __name__ == "__main__":
     parser.add_argument("--out_dir", type=str,
                         default="./results/logging",
                         help="Output directory")
-    parser.add_argument("--seed", type=int, default=1, help="Random seed")
+    parser.add_argument("--seed", type=int, default=2019, help="Random seed")
     parser.add_argument("--objective", type=str, default="cls", choices=["cls", "eos"], help="Objective")
     parser.add_argument("--num_ind", type=int, default=100, help="Number of Individuals")
     parser.add_argument("--num_gen", type=int, default=50, help="Number of Individuals")

@@ -59,17 +59,6 @@ nltk.download('punkt')
 nltk.download('punkt_tab')
 nltk.download('averaged_perceptron_tagger_eng')
 
-random.seed(1)     # python random generator
-np.random.seed(1)  # numpy random generator
-
-torch.manual_seed(1)
-torch.cuda.manual_seed_all(1)
-
-torch.backends.cudnn.deterministic = True
-torch.backends.cudnn.benchmark = False
-
-immutable_words = {'was', 'were', 'am', 'is', 'are', 'been', 'being', 'be', 'have', 'has', 'had', 'do', 'does', 'did'}
-
 def identify_salient_words(sentence):
     # Tokenize the sentence
     tokens = nltk.word_tokenize(sentence)
@@ -1169,7 +1158,7 @@ if __name__ == "__main__":
     parser.add_argument("--out_dir", type=str,
                         default="./results/logging",
                         help="Output directory")
-    parser.add_argument("--seed", type=int, default=1, help="Random seed")
+    parser.add_argument("--seed", type=int, default=2019, help="Random seed")
     parser.add_argument("--objective", type=str, default="acc", choices=["acc", "len"], help="Objective")
     parser.add_argument("--num_ind", type=int, default=100, help="Number of Individuals")
     parser.add_argument("--num_gen", type=int, default=50, help="Number of Individuals")

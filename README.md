@@ -49,3 +49,21 @@ You can reproduce the results in our paper by runing the following scripts, hype
     python attack_llm.py  --model_name_or_path google/gemma-2-9b-it  --dataset blended_skill_talk --out_dir logging/results 
     ```
 
+![overview](img/result.png)
+
+## Citation
+
+
+```bibtex
+@inproceedings{LeLuongGECCO2025,
+  author       = {Khang Gia Le and Ngoc Hoang Luong},
+  title        = {{Black-Box Adversarial Attack on Dialogue Generation via Multi-Objective Optimization}},
+  bbooktitle    = {GECCO '25: Proceedings of the Genetic and Evolutionary Computation Conference},
+  address      = {Málaga, Spain},
+  publisher    = {{ACM}},
+  year         = {2025}
+}
+```
+## Acknowledgement
+Our implementation is based on [DGSlow](https://github.com/yul091/DGSlow).  
+We would like to thank the authors for making their code publicly available.
