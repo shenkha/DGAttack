@@ -58,7 +58,7 @@ You can reproduce the results in our paper by runing the following scripts, hype
 @inproceedings{LeLuongGECCO2025,
   author       = {Khang Gia Le and Ngoc Hoang Luong},
   title        = {{Black-Box Adversarial Attack on Dialogue Generation via Multi-Objective Optimization}},
-  bbooktitle    = {GECCO '25: Proceedings of the Genetic and Evolutionary Computation Conference},
+  bbooktitle   = {GECCO '25: Proceedings of the Genetic and Evolutionary Computation Conference},
   address      = {Málaga, Spain},
   publisher    = {{ACM}},
   year         = {2025}
