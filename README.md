@@ -3,7 +3,7 @@ Black-Box Adversarial Attack on Dialogue Generation via Multi-Objective Optimiza
 
 This repository contains the official code for our paper, _**"Black-Box Adversarial Attack on Dialogue Generation via Multi-Objective Optimization"**_, accepted at **GECCO 2025**.
 
-![overview](img/overview.pdf) <!-- Replace with your actual image path -->
+![overview](img/overview.png) <!-- Replace with your actual image path -->
 
 ## Setup
 
