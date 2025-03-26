@@ -32,13 +32,20 @@ We fine-tune pre-trained transformers like `facebook/bart-base` on dialogue data
         --output_dir results/bart-base
     ```
 ## Attack Models
+You can reproduce the results in our paper by runing the following scripts, hyperparameters can be adjusted based on the papers:
 
-1. DGAttack
-- python attack_main.py  --model_name_or_path result/bart-base  --dataset blended_skill_talk  --out_dir logging/results 
+1. **DGAttack**
+    ```bash
+    python attack_main.py  --model_name_or_path result/bart-base  --dataset blended_skill_talk  --out_dir logging/results
+    ``` 
 
-2. Single-Objective GA
+2. **Single-Objective GA**
+    ```bash
+    python attack_main_popop.py  --model_name_or_path result/bart-base  --dataset blended_skill_talk  --out_dir logging/results
+    ``` 
 
-- python attack_main_popop.py  --model_name_or_path result/bart-base  --dataset blended_skill_talk  --out_dir logging/results 
+3. **Attack LLMs**
+    ```bash
+    python attack_llm.py  --model_name_or_path google/gemma-2-9b-it  --dataset blended_skill_talk --out_dir logging/results 
+    ```
 
-3. Attack LLMs
-- python attack_llm.py  --model_name_or_path google/gemma-2-9b-it  --dataset blended_skill_talk --out_dir logging/results 
